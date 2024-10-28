@@ -1,0 +1,44 @@
+body { margin: 0;}
+
+.background {
+  background-image: url('/tile_blueline.gif');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  @media (max-width: 600px) {
+    background-size: 25px;
+  }
+}
+
+.background::after {
+  content: "";
+  width: 2px;
+  left: 5%;
+  height: 100%;
+  background-color: brown;
+  position: absolute;
+}
+
+.logo {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  text-indent: -99999px;
+  width: 984px;
+  max-width: 80%;
+  height: 295px;
+  background-image: url('/public/logo_leilakhan.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  z-index: 2;
+}
+
+
